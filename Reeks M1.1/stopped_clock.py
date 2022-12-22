@@ -17,10 +17,12 @@ def main():
         return hours, minutes
 
     # Calculate the total time spent at the friend's house
-    time_spent_at_friend_house = time_to_minutes(departure_friend_hours, departure_friend_minutes) - time_to_minutes(arrival_friend_hours, arrival_friend_minutes)
+    time_spent_at_friend_house = time_to_minutes(departure_friend_hours, departure_friend_minutes) - time_to_minutes(
+        arrival_friend_hours, arrival_friend_minutes)
 
     # Calculate the total time for the round trip
-    round_trip_time = time_to_minutes(arrival_home_hours, arrival_home_minutes) - time_to_minutes(departure_home_hours, departure_home_minutes)
+    round_trip_time = time_to_minutes(arrival_home_hours, arrival_home_minutes) - time_to_minutes(departure_home_hours,
+                                                                                                  departure_home_minutes)
 
     # Calculate the time when Andrea left her own home
     time_left_home = (time_spent_at_friend_house - round_trip_time) / 2
